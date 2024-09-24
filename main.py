@@ -10,13 +10,13 @@ def quantity_same_elem(lists):
     for elem in same_elems:
         if same_elems[elem] > 1:
             str_elem = str(elem)
-            str_quan = str(same_elems[elem])
-            same_quan.append((str_elem+' : '+str_quan+' times '))
+            str_quan = str(same_elems[elem]+1)
+            same_quan.append((str_elem+' : '+(str_quan)+' times '))
     return same_quan
 
 first_list = [8,8,90,1]
-second_list = [90,11,8,43]
-third_list = [124,77,8,90]
+second_list = [90, 1,11,8,43, 1]
+third_list = [124,77,1,8,90]
 
 lists = []
 lists.append(first_list)
